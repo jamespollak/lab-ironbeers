@@ -5,7 +5,9 @@
     <p class="description">{{this.description}}</p>
     <h4 class="foodPair">Food Pairing</h4>
     <ul class="foodPairing">
-        <li>{{this.food_pairing}}</li>
+        {{#each food_pairing}}
+        <li>{{this}}</li>
+        {{#each}}
     </ul>
     <p class="brewersTips"><b>Brewers Tips:</b> {{this.brewers_tips}}</p>
 </div>
